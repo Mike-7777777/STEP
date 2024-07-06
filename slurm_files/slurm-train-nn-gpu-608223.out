@@ -1,0 +1,23 @@
+================================================================================
+JobID = 608223
+User = u11423, Account = umin_kurs_datascismartcity_s24
+Partition = gpu, Nodelist = agq002
+================================================================================
+Submitting job with sbatch from directory: /home/uni08/hpc/sun.qumeng/u11423/STEP
+Home directory: /user/sun.qumeng/u11423
+Working directory: /home/uni08/hpc/sun.qumeng/u11423/STEP
+Current node: agq002
+Python 3.9.19
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2020 NVIDIA Corporation
+Built on Mon_Oct_12_20:09:46_PDT_2020
+Cuda compilation tools, release 11.1, V11.1.105
+Build cuda_11.1.TC455_06.29190527_0
+============ Job Information ===================================================
+Submitted: 2024-07-06T00:19:23
+Started: 2024-07-06T00:19:24
+Ended: 2024-07-06T00:19:35
+Elapsed: 1 min, Limit: 300 min, Difference: 299 min
+CPUs: 4, Nodes: 1
+Estimated Consumption: 0.80 core-hours
+================================================================================

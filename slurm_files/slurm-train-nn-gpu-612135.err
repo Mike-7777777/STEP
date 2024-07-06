@@ -1,0 +1,19 @@
+2024-07-06 11:29:23,164 - easytorch-launcher - INFO - Launching EasyTorch training.
+2024-07-06 11:29:24,991 - easytorch-env - INFO - Use GPUs 0.
+Traceback (most recent call last):
+  File "/home/uni08/hpc/sun.qumeng/u11423/STEP/basicts/launcher.py", line 20, in launch_training
+    easytorch.launch_training(cfg=cfg, devices=gpus, node_rank=node_rank)
+TypeError: launch_training() got an unexpected keyword argument 'devices'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/uni08/hpc/sun.qumeng/u11423/STEP/step/run.py", line 33, in <module>
+    launch_training(args.cfg, args.gpus)
+  File "/home/uni08/hpc/sun.qumeng/u11423/STEP/basicts/launcher.py", line 24, in launch_training
+    easytorch.launch_training(cfg=cfg, gpus=gpus, node_rank=node_rank)
+  File "/user/sun.qumeng/u11423/.conda/envs/step/lib/python3.9/site-packages/easytorch/launcher/launcher.py", line 85, in launch_training
+    train_dist = dist_wrap(
+  File "/user/sun.qumeng/u11423/.conda/envs/step/lib/python3.9/site-packages/easytorch/launcher/dist_wrap.py", line 96, in dist_wrap
+    raise RuntimeError('GPU num not match, cfg.GPU_NUM = {:d}, but torch.cuda.device_count() = {:d}'.format(
+RuntimeError: GPU num not match, cfg.GPU_NUM = 2, but torch.cuda.device_count() = 1
